@@ -1,0 +1,67 @@
+{
+  "fruits": [
+    {
+      "id": "1",
+      "name": "Maçã",
+      "price": 3.5,
+      "description": "Maçã fresca e crocante",
+      "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce"
+    },
+    {
+      "id": "2",
+      "name": "Morango",
+      "price": 10,
+      "description": "Morango doce e suculento",
+      "image": "https://images.unsplash.com/photo-1587393855524-087f83d95bc9?q=80&w=760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "3",
+      "name": "Banana",
+      "price": 2,
+      "description": "Banana madura e doce",
+      "image": "https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFuYW5hfGVufDB8fDB8fHww"
+    },
+    {
+      "id": "4",
+      "name": "Laranja",
+      "price": 4,
+      "description": "Laranja suculenta e refrescante",
+      "image": "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "5",
+      "name": "Uva",
+      "price": 8,
+      "description": "Uvas doces e suculentas",
+      "image": "https://images.unsplash.com/photo-1578829779691-99b60bd8c7be?q=80&w=1067&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "6",
+      "name": "Limão",
+      "price": 1.5,
+      "description": "Limão fresco e cítrico",
+      "image": "https://plus.unsplash.com/premium_photo-1675237625086-995637f2b112?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxpbSVDMyVBM28lMjB2ZXJkZXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": "7",
+      "name": "Goiaba",
+      "price": 5,
+      "description": "Goiaba doce e aromática",
+      "image": "https://images.unsplash.com/photo-1693399991519-bef70bed19a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29pYWJhfGVufDB8fDB8fHww"
+    },
+    {
+      "id": "8",
+      "name": "Mamão",
+      "price": 7,
+      "description": "Mamão suculento e refrescante",
+      "image": " https://images.unsplash.com/photo-1526318472351-c75fcf070305?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFtJUMzJUEzb3xlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": "614e",
+      "name": "Abacate",
+      "price": 5,
+      "description": "saboroso",
+      "image": "https://images.unsplash.com/photo-1671624749229-7d37826013b5?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    } 
+  ]
+}

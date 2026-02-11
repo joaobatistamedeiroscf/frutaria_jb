@@ -1,0 +1,109 @@
+.container{
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+}
+.header {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.title {
+    color: #6CA651;
+}
+.fruitContainer {
+   margin-top: 20px;
+  
+}
+.fruitList {
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    list-style: none;
+   
+}
+
+.fruitImage {
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 20px 20px  0 0;
+   display: block;
+   margin: -20px -20px 15px -29px; 
+   width: calc(100% + 60px);
+    
+}
+
+.fruitItem {
+    background-color: #FFFFFF;
+    border: 1px solid #ACBFA4;
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.fruitItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2)
+}
+
+.fruitInfo{
+    text-align: center;
+    width: 100%;
+}
+
+.fruitDescription {
+    color:#666 ;
+    margin: 8px 0 ;
+    font-size: 14px;
+}
+
+.buttonContainer {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.addButton {
+    background-color: #6CA651;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 580px) {
+    .title {
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 16px;
+        margin-left: 4px;
+    }
+
+    .fruitItem {
+        width: 300px;
+    }
+}
+
+@media (max-width: 360px) {
+    .title {
+        font-size: 14px;
+    }
+
+    
+    
+}
