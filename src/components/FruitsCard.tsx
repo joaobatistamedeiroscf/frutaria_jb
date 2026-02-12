@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./FruitsCard.module.css";
-import db from "../data/db.json";
+import { supabase } from "../lib/supabase";
 
 interface Fruit {
   id: string;
@@ -14,7 +14,17 @@ function FruitsCard() {
   const [fruits, setFruits] = useState<Fruit[]>([]);
 
   useEffect(() => {
-    setFruits(db.fruits);
+    const fetchFruits = async () => {
+      const { data: fruits, error } = await supabase.from("fruits").select("*");
+
+      if (error) {
+        console.error("Erro ao buscar frutas:", error);
+      } else {
+        setFruits(fruits || []);
+      }
+    };
+
+    fetchFruits();
   }, []);
 
   return (
