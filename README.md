@@ -6,7 +6,7 @@ Uma aplicação web simples desenvolvida em **React** para cadastro e exibição
 
 ## 📋 Sobre o Projeto
 
-O **Frutaria** é um projeto de estudos que simula uma loja virtual de frutas, permitindo visualizar, cadastrar e gerenciar informações de diferentes frutas. A aplicação foi desenvolvida para praticar conceitos essenciais do React moderno.
+O **Frutaria JB** é um projeto de estudos que simula uma loja virtual de frutas, permitindo visualizar, cadastrar e gerenciar informações de diferentes frutas. A aplicação foi desenvolvida para praticar conceitos essenciais do React moderno.
 
 ### Conceitos Exercitados
 
@@ -29,7 +29,7 @@ O **Frutaria** é um projeto de estudos que simula uma loja virtual de frutas, p
 | [Vite](https://vitejs.dev/)                            | 7.2.4      | Build tool moderna e rápida              |
 | [React Router DOM](https://reactrouter.com/)           | 7.13.0     | Roteamento para aplicações React         |
 | [Axios](https://axios-http.com/)                       | 1.13.4     | Cliente HTTP para requisições            |
-| [JSON Server](https://github.com/typicode/json-server) | 1.0.0-beta | API REST fake para desenvolvimento       |
+| [Supabase](https://supabase.com/)                      | 2.95.3     | Backend como serviço com Postgres        |
 
 ---
 
@@ -45,8 +45,8 @@ src/
 │   ├── Home.tsx         # Página inicial com listagem
 │   ├── About.tsx        # Página sobre
 │   └── RegisterFruits.tsx # Formulário de cadastro
-├── data/
-│   └── db.json          # Banco de dados JSON
+├── lib/
+│   └── supabase.ts      # Configuração do cliente Supabase
 ├── App.tsx              # Componente principal
 └── main.tsx             # Ponto de entrada
 ```
@@ -75,18 +75,23 @@ src/
    npm install
    ```
 
-3. **Inicie o servidor de API (JSON Server)**
+3. **Configure as variáveis de ambiente**
 
-   ```bash
-   npm run server
+   Crie um arquivo `.env.local` na raiz do projeto com suas credenciais Supabase:
+
+   ```env
+   VITE_SUPABASE_URL=sua_supabase_url
+   VITE_SUPABASE_ANON_KEY=sua_supabase_anon_key
    ```
 
-   > O servidor será iniciado em `http://localhost:3000`
+   > Você pode obter estas chaves no painel de administração do Supabase
 
-4. **Em outro terminal, inicie a aplicação**
+4. **Inicie a aplicação**
+
    ```bash
    npm run dev
    ```
+
    > A aplicação estará disponível em `http://localhost:5173`
 
 ---
@@ -99,7 +104,6 @@ src/
 | `npm run build`   | Gera a build de produção                |
 | `npm run preview` | Visualiza a build de produção           |
 | `npm run lint`    | Executa o ESLint para análise de código |
-| `npm run server`  | Inicia o JSON Server na porta 3000      |
 
 ---
 
@@ -110,6 +114,20 @@ src/
 - **Validação de Formulário**: Campos obrigatórios e regras de negócio validadas
 - **Verificação de Duplicidade**: Impede cadastro de frutas com nomes repetidos
 - **Navegação SPA**: Experiência fluida sem recarregamento de página
+- **Backend seguro**: Integração com Supabase para armazenamento de dados seguro
+
+---
+
+## 🔐 Variáveis de Ambiente
+
+O projeto utiliza Supabase para backend. Crie um arquivo `.env.local` na raiz do projeto:
+
+```env
+VITE_SUPABASE_URL=https://sua-projeto.supabase.co
+VITE_SUPABASE_ANON_KEY=sua_chave_anonima
+```
+
+> **Nota**: Nunca commit suas variáveis de ambiente no repositório. Adicione `.env.local` ao `.gitignore`
 
 ---
 
@@ -122,6 +140,7 @@ Este projeto foi desenvolvido para consolidar conhecimentos em:
 3. **Validação Frontend**: Verificação de campos obrigatórios e regras de negócio antes do envio
 4. **Requisições HTTP**: Integração com API REST usando fetch/axios
 5. **Componentização**: Divisão da interface em componentes reutilizáveis e modulares
+6. **Backend as a Service**: Integração com Supabase para gerenciamento de dados
 
 ---
 
